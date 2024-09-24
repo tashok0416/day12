@@ -3,18 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>FORM TAGS</title>
 </head>
 <body>
-    <form action="LoginSucessful.html" method="get">
+    <fieldset>
+        <legend>Applicant Details</Details></legend>
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+
+
+        <label for="Fathaer's/Guardian's Name">Fathaer's/Guardian's Name </label>
+        <input type="text" name="Fathaer's/Guardian's Name" id="Fathaer's/Guardian's Name"><br>
+        <br>
+
+
+        <label for="Age">Age As on:</label>
+        <input type="text" size="1">
+        <label for="year">Years</label>
+        <input type="text" size="1">
+        <label for="month">Month</label>
+        <input type="text" size="1">
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender" id="Male">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female"><br>
+        <br>
+        <br>
+
+        <label for="photo">photo:</label>
+        <input type="file"name="photo" id="photo" accept="image">
+
+    </fieldset>
+
         <fieldset>
-        <legend>Website Login</legend>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="text" placeholder="Password"><br><br>
-        <input type="submit" value="Login"><br><br>
-        <a href="./Forgot.html">Forgot Password?</a>
-        <a href="./Register.html">Register</a>
-        </fieldset>
-    </form>
+        
+            <legend>Residential Address Details</legend>
+            <label for="aplicant adress">Applicantaddress</address></label>
+
+            <textarea name="aplicant" id="aplicant" rows="4" cols="35"></textarea>
+            
+            <label for="Distric">Distric:</label>
+            <input type="text" name="District" id="District">
+            <br>
+        
+        
+            <label for="Mandal">Mandal</label>
+            <input type="text" name="mandal" id="Mandal">
+
+            <label for="village">village</label>
+            <input type="text" name="village" id="village"> <br>
+            <br>
+
+            <label for="pin">pin code:</label>
+            <input type="text" name="pin code" id="pin code">
+            </fieldset>
+
+            <fieldset>
+                <legend> Pass Type Details</legend>
+                <label for="city">City</label>
+                <select name="city" id="city">
+            
+            <option value="select" disabled>----Select----</option>
+            <option value="hyderabad">hyderabad</option> 
+            <option value="ongole">ongole</option> 
+            <option value="chimakurthy">chimakurthy</option> 
+            </select>
+            <br><br>
+
+            <label for="Pass Type">Pass Type</label>
+            <select id="pass type" name="pass type">
+                <option value="select" disabled>----Select----</option> 
+                <option value="ordinary">ordinary</option>
+            </select>
+        
+
+    </fieldset>
+    <fieldset>
+        <legend>MOde of payment&pass collection</legend>
+        <label for="payment">payment mode</label>
+        <select name="payment" id="payment">
+            <option value="select" disabled>----Select----</option>
+            <option value="credit">credit</option>
+            <option value="debit">debit</option>
+            <option value="upi">UPI</option>
+        </select> <br><br>
+
+        <label for="pass">pass delivery mode</label>
+        <select name="pass" id="pass">
+            <option value="select" disabled>----Select----</option>
+            <option value="post">post</option>
+            <option value="pickup">pickup</option>
+        </select><br><br>
+
+    
+        <label for="center">center at which you want to collect pass</label>
+        <select name="center" id="centerpass">
+            <option value="select" disabled>----Select----</option>
+            <option value="ongole">ongole</option>
+            <option value="chimakurthy">chimakurthy</option>
+            <option value="pidathalapudi">pidathalapudi</option>
+        </select><br><br>
+        
+
+    </fieldset>
+    <button> submite</button>
 </body>
 </html>
